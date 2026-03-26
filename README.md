@@ -88,7 +88,7 @@ fresh-day/
 ### 1. Клонируйте репозиторий
 
 ```bash
-git clone <ссылка-на-репозиторий>
+git clone https://github.com/n0vv1k/nova-meal.git
 ```
 
 ### 2. Перейдите в папку проекта
