@@ -1,36 +1,261 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NOVA MEAL
 
-## Getting Started
+Современный landing page для сервиса доставки здорового питания.
 
-First, run the development server:
+Проект выполнен как pet-проект для практики работы с **Next.js**, **TypeScript** и **Tailwind CSS**, а также для отработки навыков создания аккуратного коммерческого интерфейса с русскоязычным контентом.
+
+---
+
+## О проекте
+
+**NOVA MEAL** — это одностраничный сайт для сервиса meal plan / доставки готовых рационов на день и неделю.
+
+На лендинге представлены:
+
+- hero-блок с оффером и формой заявки
+- секция с описанием сервиса
+- блок с программами питания
+- пример меню на день
+- отзывы клиентов
+- FAQ
+- footer с контактами
+
+Проект сделан с упором на:
+
+- чистую структуру страницы
+- современную подачу контента
+- адаптивную верстку
+- приятную типографику
+- понятный пользовательский сценарий
+
+---
+
+## Демо-концепция
+
+Сайт презентует сервис доставки питания, где пользователь может:
+
+- ознакомиться с форматом сервиса
+- выбрать подходящую программу питания
+- посмотреть пример меню
+- прочитать отзывы
+- оставить заявку через встроенную форму
+
+---
+
+## Стек
+
+- **Next.js**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+
+---
+
+## Возможности
+
+- адаптивный landing page
+- русскоязычный контент
+- современный UI
+- несколько секций с разным типом компоновки
+- форма заявки на первом экране
+- блок программ питания
+- таймлайн меню на день
+- секция FAQ на `details/summary`
+
+---
+
+## Структура проекта
+
+```bash
+fresh-day/
+│
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── public/
+│
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+---
+
+## Установка и запуск
+
+### 1. Клонируйте репозиторий
+
+```bash
+git clone <ссылка-на-репозиторий>
+```
+
+### 2. Перейдите в папку проекта
+
+```bash
+cd fresh-day
+```
+
+### 3. Установите зависимости
+
+```bash
+npm install
+```
+
+### 4. Запустите проект в режиме разработки
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 5. Откройте в браузере
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Production-сборка
 
-To learn more about Next.js, take a look at the following resources:
+Собрать проект:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Запустить production-версию:
 
-## Deploy on Vercel
+```bash
+npm run start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Основные блоки страницы
+
+### 1. Hero section
+
+Первый экран с основным оффером, кратким описанием сервиса, CTA-кнопками и формой заявки.
+
+### 2. Информационный блок о сервисе
+
+Описание подхода сервиса к питанию, акцент на удобстве, экономии времени и простоте выбора.
+
+### 3. Программы питания
+
+Несколько рационов с разной калорийностью и стоимостью:
+
+- **Lite**
+- **Daily**
+- **Active**
+
+### 4. Меню на день
+
+Пример дневного рациона с разбивкой по времени:
+
+- завтрак
+- обед
+- перекус
+- ужин
+
+### 5. Отзывы
+
+Блок с несколькими отзывами клиентов.
+
+### 6. FAQ
+
+Ответы на популярные вопросы пользователей.
+
+### 7. Footer
+
+Контакты и краткая информация о бренде.
+
+---
+
+## Файлы проекта
+
+### `app/layout.tsx`
+
+Содержит основной layout приложения и metadata сайта.
+
+### `app/page.tsx`
+
+Главная страница лендинга со всем контентом.
+
+### `app/globals.css`
+
+Глобальные стили и CSS-переменные с цветовой палитрой проекта.
+
+---
+
+## Дизайн-концепция
+
+В проекте использован современный editorial-style подход:
+
+- крупные заголовки
+- асимметричная композиция
+- мягкая цветовая палитра
+- сочетание больших секций и компактных информационных блоков
+- встроенная форма заявки в первом экране
+
+Цветовая схема построена на сочетании:
+
+- теплого светлого фона
+- графитового текста
+- терракотового акцента
+- приглушенного шалфейного дополнительного цвета
+
+---
+
+## Что можно улучшить
+
+Проект можно расширить и доработать, например:
+
+- подключить отправку формы
+- добавить backend или API
+- сделать интеграцию с Telegram
+- добавить реальные фотографии блюд
+- подключить анимации появления блоков
+- сделать мобильное меню
+- добавить CMS для редактирования контента
+- вынести данные секций в отдельные массивы или JSON
+- разбить страницу на переиспользуемые компоненты
+
+---
+
+## Планы по развитию
+
+Возможные следующие шаги:
+
+1. Добавить отправку заявок на email или в Telegram
+2. Разбить лендинг на React-компоненты
+3. Подключить изображения из папки `public`
+4. Сделать отдельную страницу с тарифами
+5. Добавить анимации и micro-interactions
+6. Подготовить деплой на Vercel
+
+---
+
+## Цель проекта
+
+Этот pet-проект создан для практики:
+
+- разработки landing page на **Next.js**
+- работы с **TypeScript**
+- стилизации через **Tailwind CSS**
+- построения аккуратного UI под коммерческую нишу
+- оформления проекта для портфолио и GitHub
+
+---
+
+## Кому может подойти такой шаблон
+
+Подобный лендинг можно адаптировать под:
+
+- доставку готового питания
+- фитнес-питание
+- подписку на healthy meal plans
+- доставку рационов на неделю
+- wellness / lifestyle сервис
